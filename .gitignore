@@ -1,0 +1,55 @@
+terraform-provider-dsd
+terraform-provider-dsd.exe
+
+### Eclipse ###
+.metadata
+bin/
+tmp/
+*.log
+overlays/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.externalToolBuilders/
+*.launch
+.cproject
+.factorypath
+.buildpath
+.worksheet
+.project
+.classpath
+
+### IntelliJ ###
+.idea/
+out/
+*.iml
+*.ipr
+*.iws
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+!/.mvn/wrapper/maven-wrapper.jar
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Unignore folders that are mistakenly caught by other rules ###
+!/.s2i/bin/
