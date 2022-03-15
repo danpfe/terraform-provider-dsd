@@ -42,7 +42,10 @@ func resourceReservedNameCreate(ctx context.Context, d *schema.ResourceData, met
 		return diag.FromErr(err)
 	}
 
+	jwt_token := "ey..."
+
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s/api/reserve_name", meta.(string)), bytes.NewBuffer(in_data_json))
+	req.Header.Set("Authorization", "Bearer "+jwt_token)
 	if err != nil {
 		return diag.FromErr(err)
 	}
